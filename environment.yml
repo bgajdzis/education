@@ -1,8 +1,6 @@
-name: example-environment
+name: anim-deps
 
 dependencies:
   - python=3.5
-  - numpy
   - matplotlib
   - ffmpeg
-  - qt
