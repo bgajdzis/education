@@ -1,2 +1,2 @@
 matplotlib
-libavwrapper
+pypi-libavwrapper
