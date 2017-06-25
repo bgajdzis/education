@@ -1,2 +1,2 @@
 matplotlib
-pypi-libavwrapper
+python3-tk
