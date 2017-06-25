@@ -6,4 +6,4 @@ dependencies:
   - python=3.4
   - numpy
   - matplotlib
-  - ffmpg
+  - ffmpeg
