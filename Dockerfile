@@ -6,7 +6,7 @@ USER root
 
 # Add dependency
 RUN apt-get update
-RUN apt-get install -y libqt4-core libqt4-gui qt4-qmake libqt4-dev qt4-dev-tools && apt-get clean
+RUN apt-get install -y libqt4-core libqt4-gui qt4-qmake libqt4-dev qt4-dev-tools ffmpeg && apt-get clean
 
 
 USER main
