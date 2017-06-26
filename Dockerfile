@@ -6,6 +6,6 @@ USER root
 
 # Add Python & Qt dependencies
 RUN apt-get update
-RUN apt-get install -y libqt4-core libqt4-gui qt4-qmake libqt4-dev qt4-dev-tools python3-pyqt4 python3-matplotlib && apt-get clean
+RUN apt-get install -y python3-pyqt python3-matplotlib && apt-get clean
 
 USER main
