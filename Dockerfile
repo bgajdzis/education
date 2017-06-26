@@ -6,6 +6,6 @@ USER root
 
 # Add Python & Qt dependencies
 RUN apt-get update
-RUN apt-get install -y ffmpeg python3-matplotlib
+RUN apt-get install -y libav-tools python3-matplotlib
 
 USER main
