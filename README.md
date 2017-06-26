@@ -1,2 +1,2 @@
 # education
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/bgajdzis/education)
+[![Binder](http://mybinder.org/badge.svg)](https://beta.mybinder.org:/v2/bgajdzis/education/master)
