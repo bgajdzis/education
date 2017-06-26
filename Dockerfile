@@ -1,15 +1,15 @@
 FROM andrewosh/binder-base
 
-MAINTAINER Bartłomiej Gajdzis <bartlomiej.gajdzis@gmail.com>
+MAINTAINER Andrew Osheroff <andrewosh@gmail.com>
 
 USER root
 
-# Add dependency
+# Add Julia dependencies
 RUN apt-get update
-RUN apt-get install -y libqt4-core libqt4-gui qt4-qmake libqt4-dev qt4-dev-tools ffmpeg && apt-get clean
-
+RUN apt-get install -y julia libnettle4 && apt-get clean
 
 USER main
 
-# Install requirements for Python 3
-RUN /home/main/anaconda/envs/python3/bin/pip install matplotlib
+# Install Julia kernel
+RUN julia -e 'Pkg.add("IJulia")'
+RUN julia -e 'Pkg.add("Gadfly")' && julia -e 'Pkg.add("RDatasets")'
