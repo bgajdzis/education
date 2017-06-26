@@ -1,6 +1,6 @@
 FROM andrewosh/binder-base
 
-MAINTAINER Andrew Osheroff <andrewosh@gmail.com>
+MAINTAINER Bartlomiej Gajdzis <bartlomiej.gajdzis@gmail.com>
 
 USER root
 
