@@ -1,6 +1,0 @@
-name: anim-deps
-
-dependencies:
-  - python=3.5
-  - matplotlib
-  - ffmpeg
