@@ -6,6 +6,6 @@ USER root
 
 # Add Python & Qt dependencies
 RUN apt-get update
-RUN apt-get install -y libav-tools python3-matplotlib
+RUN apt-get install -y libav-tools python3-matplotlib python-pyqt5
 
 USER main
