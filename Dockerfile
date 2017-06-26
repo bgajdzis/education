@@ -6,10 +6,6 @@ USER root
 
 # Add Julia dependencies
 RUN apt-get update
-RUN apt-get install -y julia libnettle4 && apt-get clean
+RUN apt-get install -y libqt4-core libqt4-gui qt4-qmake libqt4-dev qt4-dev-tools && apt-get clean
 
 USER main
-
-# Install Julia kernel
-RUN julia -e 'Pkg.add("IJulia")'
-RUN julia -e 'Pkg.add("Gadfly")' && julia -e 'Pkg.add("RDatasets")'
