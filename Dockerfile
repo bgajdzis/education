@@ -11,4 +11,4 @@ RUN apt-get install -y qt4-qmake libqt4-dev
 USER main
 
 # Install requirements for Python 3
-RUN /home/main/anaconda/envs/python3/bin/pip install -r requirements.txt
+RUN /home/main/anaconda/envs/python3/bin/pip install matplotlib
